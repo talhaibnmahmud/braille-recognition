@@ -1,0 +1,69 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.h-font {
+  font-family: "Merienda", cursive;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.custom-bg {
+  background-color: rgb(255, 255, 255);
+}
+
+.custom-bg:hover {
+  background-color: rgb(232, 241, 241);
+}
+
+.footer-bg {
+  background-color: rgb(18, 19, 19);
+}
+
+.footer1-bg {
+  background-color: rgb(227, 238, 238);
+}
+
+.box {
+  border-top-color: aqua !important;
+}
+
+.btn-bg {
+  border-top-color: rgb(77, 80, 79) !important;
+}
+
+ul#menu li {
+  display: inline;
+}
+
+.input[type="checkbox"] {
+  margin-left: -30px;
+}
+
+.mr {
+  margin-right: 0px;
+}
+
+.serviceBox1 {
+  float: left;
+
+  width: 20%;
+
+  height: 250px;
+
+  background-color: white;
+
+  border: 1px solid #bdbdbd;
+
+  -webkit-border-radius: 5px;
+
+  border-radius: 5px;
+
+  -moz-box-shadow: 0 0 10px #bdbdbd;
+
+  -webkit-box-shadow: 0 0 10px #bdbdbd;
+
+  box-shadow: 0 0 10px #bdbdbd;
+}
