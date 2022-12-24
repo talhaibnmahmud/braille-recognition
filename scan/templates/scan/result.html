@@ -1,0 +1,37 @@
+{% extends 'main.html' %}
+
+{% block title %}Result{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <!-- component -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        module.exports = {
+            theme: {
+                extend: {
+                    animation: {
+                        'spin-slow': 'spin 5s linear infinite',
+                    },
+                },
+            },
+            plugins: [],
+        }
+    </script>
+    <div class="flex my-10 items-center">
+        <div
+            class="group relative mx-auto w-96 overflow-hidden rounded-[16px] bg-gray-300 p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500">
+            <div
+                class="group-hover:animate-spin-slow invisible absolute -top-40 -bottom-40 left-10 right-10 bg-gradient-to-r from-transparent via-white/90 to-transparent group-hover:visible">
+            </div>
+            <div class="relative rounded-[15px] bg-white p-6">
+                <div class="space-y-4">
+                    <img src="{{ uploads.image.url }}" alt="{{ uploads.image.name }}" />
+                    <p class="text-lg font-semibold text-slate-800">Result: </p>
+                    <p class="font-md text-slate-500">Recognized Character: ''</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

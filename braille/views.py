@@ -21,10 +21,6 @@ class HelpView(TemplateView):
     template_name = 'help.html'
 
 
-class ScanView(TemplateView):
-    template_name = 'scan.html'
-
-
 class SignUpView(CreateView):
     model = User
     fields = ['username', 'first_name', 'last_name', 'email', 'password']

@@ -131,3 +131,7 @@ dmypy.json
 
 # IDEs
 .idea/
+
+
+# Media
+media/uploads/
