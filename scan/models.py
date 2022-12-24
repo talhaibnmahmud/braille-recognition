@@ -16,7 +16,9 @@ class Uploads(models.Model):
         on_delete=models.CASCADE,
         editable=False
     )
+
     image = models.ImageField(upload_to=user_directory_path)
+    caption = models.CharField(max_length=8, null=True, blank=True)
     uploaded_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
